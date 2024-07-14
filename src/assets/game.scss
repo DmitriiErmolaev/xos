@@ -1,0 +1,27 @@
+.game {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font: 400 16px Jost, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: #dcfff4;
+}
+
+.x-mark {
+  color: blue;
+}
+
+.o-mark {
+  display: block;
+  color:red;
+}
+
+.victory {
+  color: rgb(19, 185, 19);
+}
+
+.draw {
+  color: rgb(55, 30, 197);
+}
+

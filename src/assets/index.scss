@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
+.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  user-select: none;
+}

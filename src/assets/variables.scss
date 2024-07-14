@@ -1,0 +1,7 @@
+$cellWidth: 120;
+$cellHeight: 120;
+$cellWidthPX: calc($cellWidth * 1px);
+$diagonalWidth: calc(sqrt($cellWidth * $cellWidth + $cellHeight * $cellHeight) * 1px);
+$straightWidth: calc($cellWidth * 1px);
+$markSizeHead: 3rem;
+$markSizeCell: 8rem;

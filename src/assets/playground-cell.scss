@@ -1,0 +1,59 @@
+@import 'variables.scss';
+
+.playground__cell {
+  position: relative;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $cellWidthPX;
+  height: $cellWidthPX;
+  border: 0.5px solid black;
+  .x-mark, .o-mark {
+    font-size:$markSizeCell ;
+    line-height: $markSizeCell;
+  }
+}
+
+.diagonal-top-left {
+  &:before {
+    content:'';
+    display: block;
+    position: absolute;
+    border-top: 3px solid black;
+    width: $diagonalWidth;
+    transform: rotate(45deg);
+  }
+}
+
+.diagonal-bottom-left {
+  &:before {
+    content:'';
+    display: block;
+    position: absolute;
+    border-top: 3px solid black;
+    width: $diagonalWidth;;
+    transform: rotate(-45deg);
+  }
+}
+
+.vertical {
+  &:before {
+    content:'';
+    display: block;
+    position: absolute;
+    border-top: 3px solid black;
+    width: $straightWidth;
+    transform: rotate(90deg);
+  }
+}
+
+.horizontal {
+  &:before {
+    content:'';
+    display: block;
+    position: absolute;
+    border-top: 3px solid black;
+    width: $straightWidth;
+  }
+}

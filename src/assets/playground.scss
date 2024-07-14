@@ -1,0 +1,77 @@
+.playground {
+  width: max-content;
+  padding-top:2em;
+
+  .playground__board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 0.5px solid black;
+    width: fit-content;
+    font-family: Arial;
+    overflow: hidden;
+  }
+  .playground__start-button {
+    width: 100%;
+    margin-top: 10px;
+    padding:10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    appearance: none;
+    color:white;
+    // background: linear-gradient(to left top, rgb(221, 231, 253) 0%, rgb(143, 178, 255) 100%);
+    background: linear-gradient(to left top, rgb(221, 231, 253) 0%, rgb(130, 138, 255) 50%, rgb(31, 102, 255) 100%);
+    box-shadow:
+      inset 2px 2px 2px 0 rgba(255, 255, 255, 0.507),
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.226);
+    cursor:pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform ease-in 0.1s;
+    font-size: 1.3rem;
+
+    &:hover {
+      transform: translate(5px, -3px);
+      background-color: rgb(143, 178, 255);
+      box-shadow:
+      inset 2px 2px 2px 0 rgba(255, 255, 255, 0.507),
+      7px 7px 20px 0px rgba(0,0,0,.5),
+      4px 4px 5px 0px rgba(0,0,0,.2);
+      // box-shadow: -2px -2px 0 0 rgb(180, 203, 255),  3px 6px 10px 0px rgba(0, 0, 0, 0.425);
+
+    }
+    &:active {
+      transform: translate(0px, 0px);
+      box-shadow:
+      inset 2px 2px 2px 0 rgba(255, 255, 255, 0.507),
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+    }
+
+  }
+
+  .play-game-animation {
+    animation-name: breath;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    // animation-timing-function: cubic-bezier(0,.26,1,.77);
+    animation-iteration-count: infinite;
+
+    @keyframes breath {
+      50% {
+        transform: translate(3px, -3px);
+        box-shadow:  inset 2px 2px 2px 0 rgba(255, 255, 255, 0.507),
+        7px 7px 20px 0px rgba(0,0,0,.5),
+        4px 4px 5px 0px rgba(0,0,0,.2);
+      }
+
+      100% {
+        transform: none;
+        box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.507),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+      }
+    }
+  }
+}
+

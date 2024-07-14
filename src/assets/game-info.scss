@@ -1,0 +1,34 @@
+@import 'variables.scss';
+
+.game-info {
+  display: flex;
+  justify-content: space-around;
+  .game-info__info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:130px;
+    padding: 1em 2em;
+    border-radius: 10px;
+    background-color: rgb(143, 178, 255);
+    box-shadow: 3px 6px 10px 0px rgba(0, 0, 0, 0.425);
+
+    .game-info__title {
+      font-weight: 600;
+      margin-bottom: 0.8em;
+    }
+
+    .head-icon {
+      display: block;
+      height: 3rem;
+    }
+
+    .x-mark,
+    .o-mark {
+      line-height: $markSizeHead;
+      font-size: $markSizeHead;
+    }
+  }
+
+
+}
