@@ -5,7 +5,10 @@
   font: 400 16px Jost, sans-serif;
   width: 100vw;
   height: 100vh;
-  background-color: #dcfff4;
+  // background-color: #dcfff4;
+  // background:linear-gradient(45deg, rgb(241, 143, 143), #23fab2, #4b60b9);
+	background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+  padding-top: 1rem
 }
 
 .x-mark {
@@ -24,4 +27,3 @@
 .draw {
   color: rgb(55, 30, 197);
 }
-
