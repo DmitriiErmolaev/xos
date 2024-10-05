@@ -4,7 +4,7 @@ import SwitchPlayerType from '../../../types/SwitchPlayerType';
 import Players, { CellSelectedBy } from '../../../types/Players';
 import { CurrentTurnContext, FunctionsContext, GameResultContext, GameStatusContext, VictoryCaseContext } from '../../../contexts';
 import GameStatuses from '../../../types/GameStatus';
-import Head from '../../../layout/head/components/Head';
+import Head from '../../../layout/head/components/GameStatusPanel';
 import '../../../assets/game.scss';
 import GameResults from '../../../types/GameResult';
 import SelectCellType from '../../../types/SelectCellType';

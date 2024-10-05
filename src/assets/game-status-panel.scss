@@ -1,6 +1,7 @@
 @import 'variables.scss';
 
-.game-info {
+.game-status-panel {
+  width: 50%;
   display: flex;
   justify-content: space-around;
   .game-info__info-block {
@@ -29,6 +30,10 @@
       font-size: $markSizeHead;
     }
   }
-
-
 }
+
+
+
+
+
+

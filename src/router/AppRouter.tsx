@@ -13,11 +13,11 @@ const AppRouter = () => {
   }
 
   if(userContext?.error) {
-    return 'Попасть в обработчик ошибок'
+    // return 'Попасть в обработчик ошибок'
   }
 
   if(!userContext?.user) {
-    
+
   }
 
   return (

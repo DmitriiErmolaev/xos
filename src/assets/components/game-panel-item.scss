@@ -1,0 +1,25 @@
+.game-panel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:130px;
+  padding: 1em 2em;
+  border-radius: 10px;
+  background-color: rgb(143, 178, 255);
+  box-shadow: 3px 6px 10px 0px rgba(0, 0, 0, 0.425);
+
+  .game-panel-item__title {
+    font-weight: 600;
+    margin-bottom: 0.8em;
+  }
+  .game-panel-item__icon-container {
+    .game-panel-item__icon {
+      display: block;
+      height: 3rem;
+    }
+  }
+  .game-panel-item__announcement {
+    font-size: 1.6em;
+    font-weight: 700;
+  }
+}
